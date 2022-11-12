@@ -6,6 +6,9 @@ pipeline{
     //tools{
         //maven 'automaven'
    // }
+     triggers{
+        cron 'H H 1,15 1-11 *'
+   	}
     stages{
         stage("code checkout"){
             steps{
